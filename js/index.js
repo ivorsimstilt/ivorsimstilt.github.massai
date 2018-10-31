@@ -67,8 +67,8 @@ function main() {
     const imageAspect = originalImage.width / originalImage.height;
     const mat = m3.scaling(imageAspect / canvasAspect, -1);
 		
-		nMouse[0] += (mouse[0] - nMouse[0]) * 0.05;
-		nMouse[1] += (mouse[1] - nMouse[1]) * 0.05;
+		nMouse[0] += (mouse[0] - nMouse[0]) * 0.02;
+		nMouse[1] += (mouse[1] - nMouse[1]) * 0.02;
 			
     // calls gl.activeTexture, gl.bindTexture, gl.uniformXXX
     twgl.setUniforms(programInfo, {
