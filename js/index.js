@@ -30,13 +30,13 @@ function main() {
 
   const mouse = [0, 0];
   document.addEventListener('mousemove', (event) => {
-    mouse[0] = (event.clientX / gl.canvas.clientWidth  * 2 - 1) * -0.02;
-    mouse[1] = (event.clientY / gl.canvas.clientHeight * 2 - 1) * -0.02;
+    mouse[0] = (event.clientX / gl.canvas.clientWidth  * 2 - 1) * -0.05;
+    mouse[1] = (event.clientY / gl.canvas.clientHeight * 2 - 1) * -0.05;
   });
 	
 	document.addEventListener('touchmove', (event) => {
-    mouse[0] = (event.touches[0].clientX / gl.canvas.clientWidth  * 2 - 1) * -0.02;
-    mouse[1] = (event.touches[0].clientY / gl.canvas.clientHeight * 2 - 1) * -0.02;
+    mouse[0] = (event.touches[0].clientX / gl.canvas.clientWidth  * 2 - 1) * -0.05;
+    mouse[1] = (event.touches[0].clientY / gl.canvas.clientHeight * 2 - 1) * -0.05;
   });
 	
 	document.addEventListener('touchend', (event) => {
