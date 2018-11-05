@@ -65,8 +65,7 @@ function main() {
 
     const canvasAspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
     const imageAspect = originalImage.width / originalImage.height;
-    const mat = m3.scaling(imageAspect / canvasAspect, -1);
-var changeScale = m3.scale(mat, [(gl.canvas.clientWidth / Window.InnerWidth, -1)], mat);
+    const mat = m3.scaling(Window.InnerWidth / canvasAspect, -1);
 	  
 	 
 		
