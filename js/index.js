@@ -63,9 +63,9 @@ function main() {
     // calls gl.bindBuffer, gl.enableVertexAttribArray, gl.vertexAttribPointer
     twgl.setBuffersAndAttributes(gl, programInfo, bufferInfo);
 
-//     const canvasAspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
-//     const imageAspect = originalImage.width / originalImage.height;
-//     const mat = m3.scaling(imageAspect / canvasAspect, -1);
+    const canvasAspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
+    const imageAspect = originalImage.width / originalImage.height;
+    const mat = m3.scaling(imageAspect / canvasAspect, -1);
 	  
 	 
 		
@@ -74,7 +74,7 @@ function main() {
 			
     // calls gl.activeTexture, gl.bindTexture, gl.uniformXXX
     twgl.setUniforms(programInfo, {
-//       u_matrix: mat,
+      u_matrix: mat,
       u_originalImage: originalTexture,
       u_mapImage: mapTexture,
       u_mouse: nMouse,
