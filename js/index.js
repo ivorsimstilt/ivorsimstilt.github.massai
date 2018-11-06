@@ -18,7 +18,7 @@ function main() {
   });
   
   const mapTexture = twgl.createTexture(gl, {
-    src: "../img/arrival_depth.jpg", crossOrigin: '',
+    src: "../img/arrival_depthmap.jpg", crossOrigin: '',
   });
   
 
