@@ -63,9 +63,9 @@ function main() {
     // calls gl.bindBuffer, gl.enableVertexAttribArray, gl.vertexAttribPointer
     twgl.setBuffersAndAttributes(gl, programInfo, bufferInfo);
 
-    const canvasAspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
+ const canvasAspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
     const imageAspect = originalImage.width / originalImage.height;
-    const mat = m3.scaling(Window.InnerWidth / canvasAspect, -1);
+    const mat = m3.scaling(imageAspect / canvasAspect, -1);
 	  
 	 
 		
