@@ -45,7 +45,7 @@
 
 	void main() {
 		 vec4 depthDistortion = texture2D(u_mapImage, v_texcoord);
-		 float parallaxMult = 0.5 - depthDistortion.r;
+		 float parallaxMult = 0.75 - depthDistortion.r;
 
 		 vec2 parallax = (u_mouse) * parallaxMult;
 
