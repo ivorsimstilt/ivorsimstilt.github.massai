@@ -11,14 +11,14 @@ function main() {
 
   let originalImage = { width: 1, height: 1 }; // replaced after loading
   const originalTexture = twgl.createTexture(gl, {
-    src: "../img/arrival.jpg", 
+    src: "../img/conflict.jpg", 
     crossOrigin: '',
   }, (err, texture, source) => {
     originalImage = source;
   });
   
   const mapTexture = twgl.createTexture(gl, {
-    src: "../img/arrival_depthmap.jpg", crossOrigin: '',
+    src: "../img/conflict_depth_new.jpg", crossOrigin: '',
   });
   
 
